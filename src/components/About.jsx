@@ -13,17 +13,23 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-10 text-gray-500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non
-          risus in arcu efficitur sagittis. Nulla facilisi. Praesent fringilla,
-          mauris eu tempus molestie, eros erat sagittis quam, vel vulputate
-          ligula ligula sit amet erat. Suspendisse potenti.
+          I am a passionate Frontend and UI/UX Developer with one year of
+          experience in creating responsive, user-centric web applications. My
+          expertise lies in React.js, Angular, SCSS, and modern frontend
+          technologies. I specialize in building interactive dashboards,
+          pixel-perfect UI components, and performance-optimized applications. I
+          focus on crafting seamless user experiences through clean, efficient,
+          and scalable code.
         </p>
         <br />
         <p className="text-xl  text-gray-500">
-          Curabitur auctor, dolor et suscipit pharetra, lectus mauris dictum
-          ipsum, at tincidunt est justo non elit. Integer sodales lectus
-          fermentum, suscipit libero in, gravida nisi. Proin dapibus enim nec
-          felis vestibulum, nec ultrices nunc cursus.
+          I have worked on various projects, including eCommerce platforms,
+          enterprise applications, and data-driven dashboards. My skill set
+          includes AmCharts, Kendo UI, Tailwind CSS, Redux, and API
+          integrations. With a strong background in responsive design using CSS
+          Grid and Flexbox, I aim to deliver high-quality solutions. I hold a
+          Master’s in Computer Applications from Sinhgad Institute of
+          Management.
         </p>
       </div>
     </div>

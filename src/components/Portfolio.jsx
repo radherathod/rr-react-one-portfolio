@@ -5,12 +5,15 @@ import ecommerce from "../assets/ecommerce.jpg";
 import mern from "../assets/mern.png";
 import nav from "../assets/nav.png";
 import reactWeather from "../assets/reactWeather.jpg";
+import pricing from "../assets/pricing.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
       src: calcy,
+      href: "https://github.com/radherathod/calculator",
+      demo:""
     },
     {
       id: 2,
@@ -27,6 +30,12 @@ const Portfolio = () => {
     {
       id: 5,
       src: nav,
+    },
+    {
+      id: 6,
+      src: pricing,
+      href: "https://github.com/radherathod/pricing_container_proveway",
+      demo: "https://aesthetic-salmiakki-64af79.netlify.app/",
     },
   ];
 
@@ -47,7 +56,7 @@ const Portfolio = () => {
 
         {/* Grid layout should be outside the map */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, href, demo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -56,10 +65,10 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <button className=" text-sm w-1/2 px-3 py-1 m-2 duration-200 hover:scale-105">
-                  Demo
+                  <a href={demo}> Demo</a>
                 </button>
                 <button className=" text-sm w-1/2 px-3 py-1 m-2 duration-200 hover:scale-105">
-                  Code
+                  <a href={href}>Code</a>
                 </button>
               </div>
             </div>
