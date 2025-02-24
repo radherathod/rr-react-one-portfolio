@@ -12,8 +12,8 @@ const Portfolio = () => {
     {
       id: 1,
       src: calcy,
-      href: "https://github.com/radherathod/calculator",
-      demo:""
+      href: "https://github.com/radherathod/Sci_calcy/tree/main/calculator",
+      demo: "scientificca.netlify.app",
     },
     {
       id: 2,
