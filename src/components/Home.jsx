@@ -17,7 +17,7 @@ const Home = () => {
           </h2>
 
           <p className="text-gray-500 py-4 max-w-md">
-            I'm a Front-End Developer with 6 months of experience in building
+            I'm a Front-End Developer with 1 year of experience in building
             responsive web applications. Skilled in React, Angular, JavaScript,
             Tailwind CSS, Kendo UI, and AMCharts 4 & 5, I focus on creating
             clean, efficient, and user-friendly interfaces.

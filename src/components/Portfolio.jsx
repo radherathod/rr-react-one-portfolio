@@ -6,7 +6,7 @@ import mern from "../assets/mern.png";
 import nav from "../assets/nav.png";
 import reactWeather from "../assets/reactWeather.jpg";
 import pricing from "../assets/pricing.png";
-
+import auth from "../assets/auth.png";
 const Portfolio = () => {
   const portfolios = [
     {
@@ -25,7 +25,9 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      src: mern,
+      src: auth,
+      href: "https://github.com/radherathod/firebase_auth",
+      demo: "https://firebaseloginsignin.netlify.app",
     },
     {
       id: 5,
