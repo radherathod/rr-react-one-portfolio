@@ -4,6 +4,7 @@ import destructure from "../assets/destructure.png";
 import ecommerce from "../assets/ecommerce.jpg";
 import mern from "../assets/mern.png";
 import nav from "../assets/nav.png";
+import firebaseauth from "../assets/firebaseauth.jpg";
 import reactWeather from "../assets/reactWeather.jpg";
 import pricing from "../assets/pricing.png";
 import auth from "../assets/auth.png";
@@ -11,9 +12,9 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: calcy,
-      href: "https://github.com/radherathod/Sci_calcy/tree/main/calculator",
-      demo: "scientificca.netlify.app",
+      src: firebaseauth,
+      href: "https://github.com/radherathod/firebase_auth",
+      demo: "https://firebaseloginsignin.netlify.app",
     },
     {
       id: 2,
