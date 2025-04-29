@@ -1,7 +1,8 @@
+// /src/components/SocialLink.jsx
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonFill } from "react-icons/bs";
+import { BsFillPersonLinesFill } from "react-icons/bs"; // Corrected icon import maybe? Use PersonFill if intended
 
 const SocialLink = () => {
   const links = [
@@ -9,67 +10,66 @@ const SocialLink = () => {
       id: 1,
       child: (
         <>
-          {" "}
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/radheshyam-rathod-6b765625b/",
+      href: "https://www.linkedin.com/in/radheshyam-rathod-6b765625b/", // Ensure link is correct
       style: "rounded-tr-md",
     },
     {
       id: 2,
       child: (
         <>
-          {" "}
           Github <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/radherathod",
+      href: "https://github.com/radherathod", // Ensure link is correct
     },
     {
       id: 3,
       child: (
         <>
-          {" "}
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:your.email@example.com", // *** IMPORTANT: Update this email ***
     },
     {
       id: 4,
       child: (
         <>
-          {" "}
-          Resume <BsFillPersonFill size={30} />
+          Resume <BsFillPersonLinesFill size={30} /> {/* Or BsFillPersonFill */}
         </>
       ),
-      href: "./resume.pdf",
+      href: "/resume.pdf", // Make sure resume.pdf is in the /public folder
       style: "rounded-br-md",
       download: true,
     },
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+    // Hidden on small screens (lg:flex), fixed position
+    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed z-40">
+      {" "}
+      {/* Ensure z-index is below modal backdrop */}
       <ul>
-        {links.map((link) => (
+        {links.map(({ id, child, href, style, download }) => (
           <li
-            key={link.id}
+            key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
-              " " +
-              (link.style || "")
+              `flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-600 hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-600 transition-all ease-out ${
+                style || ""
+              }` // Added gradient hover
             }
           >
             <a
-              href={link.href}
-              className="flex justify-between items-center w-full text-white"
-              download={link.download || false}
+              href={href}
+              className="flex justify-between items-center w-full text-white font-medium"
+              download={download}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer" // Good practice for external links
             >
-              {link.child}
+              {child}
             </a>
           </li>
         ))}
